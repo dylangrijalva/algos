@@ -1,4 +1,4 @@
-function binarySearch(collection: Array<number>, target: number): number {
+export function binarySearch(collection: Array<number>, target: number): number {
   function recursiveBinarySearch(collection: Array<number>, target: number, start: number, end: number): number {
     if (start > end) {
       return -1;
