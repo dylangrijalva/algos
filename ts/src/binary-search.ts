@@ -24,8 +24,3 @@ export function binarySearch(collection: Array<number>, target: number): number 
 
   return recursiveBinarySearch(collection, target, 0, collection.length - 1);
 }
-
-const collection: Array<number> = [24, 51, 69, 78, 96, 104, 111, 116, 127, 139, 145, 160] as const;
-const index = binarySearch(collection, 127);
-const message = index !== -1 ? `Element found at index ${index}` : "Element were not found in the collection";
-console.log(message);
