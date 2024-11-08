@@ -1,7 +1,7 @@
 import { binarySearch } from "./binary-search";
 
 describe("binarySearch", () => {
-  test("when searching the target, should return the right index", () => {
+  test("when searching an element that is in the collection, should return the index", () => {
     const collection: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9] as const;
     const expectedIndex = 2;
     const target = 3;
